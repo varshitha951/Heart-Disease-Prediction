@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/4848/4848971.png" />
+  <title>Heart Disease Predictor</title>
+  <style>
+    body {
+      background-image: linear-gradient(rgba(0,0,0,0.1),#ecbcb4),url('/static/heart.jpeg'); 
+      background-color: whitesmoke; 
+      background-size: cover; /* Ensures the image covers the entire element */
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      /*background-size: 100%;*/
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    h1 {
+        font-family: Georgia;
+      text-align: center; 
+      color:black;
+      font-size: 550%;
+      margin: 0; 
+      padding: 0; 
+      
+    }
+
+    form {
+      text-align: center;
+      margin-top: 100px; /* Add margin to the top of the form */
+    }
+
+    button {
+      background: #f9f9f9;
+      border: 2px solid #53a8ee;
+      border-radius: 1000px; /* Use a large border-radius for a round button */
+      box-shadow: 3px 3px #8c8c8c;
+      padding: 15px 40px; /* Adjust padding */
+      color: #000000;
+      font: italic bold 20px/1 "Calibri", sans-serif;
+      cursor: pointer; /* Add cursor pointer */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Heart Disease Prediction</h1>
+  <form action="/main" method="get">
+    <button type="submit">Go</button>
+  </form>
+</body>
+
+</html>
